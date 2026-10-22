@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Designed HTML Card</title>
+  <style>
+    /* Basic Reset and Styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Card Container */
+    .card {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 350px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    /* Card Image */
+    .card-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    /* Card Content Area */
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-category {
+      display: inline-block;
+      background-color: #e0e7ff;
+      color: #4f46e5;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 8px;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    /* Card Button */
+    .card-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background-color: #4f46e5;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 12px;
+      border-radius: 8px;
+      transition: background-color 0.2s ease;
+    }
+
+    .card-btn:hover {
+      background-color: #4338ca;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://unsplash.com" alt="Laptop on desk" class="card-image">
+    <div class="card-body">
+      <span class="card-category">Web Design</span>
+      <h2 class="card-title">Modern UI Card</h2>
+      <p class="card-description">This is a clean, responsive card layout built with semantic HTML and internal CSS styling.</p>
+      <a href="#" class="card-btn">Learn More</a>
+    </div>
+  </div>
+
+</body>
+</html>
 
